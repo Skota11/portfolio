@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
+import {Image} from 'next/image';
 
 //module
 import {
@@ -28,7 +29,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="https://avatars.githubusercontent.com/u/91359399" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+<link rel="preconnect" href="https://fonts.gstatic.com" />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
       </Head>
       <animated.div
@@ -52,7 +53,7 @@ export default function Home() {
             <div className='rounded-xl bg-sprout w-4/5 max-w-screen-sm p-8 shadow-lg duration-300 hover:shadow-neutral-300'>
               <h2 className='my-4 text-xl'>Skota11 こた</h2>
               <div className='mb-4'>
-                <img src="https://avatars.githubusercontent.com/u/91359399" alt="" width="60px"/>
+                <Image src="https://avatars.githubusercontent.com/u/91359399" alt="" width="60px"/>
                 </div>
                 <div>
                   <p className='mb-2'>14yo / Student</p>
