@@ -36,17 +36,21 @@ export default function Home() {
           ...springY,
         }}>
         <header className='bg-half_baked rounded-b-xl shadow-xl text-martinique mb-4'>
-          <p className='text-center py-4 text-xl'>Skota11 | こた</p>
-          <ul className='flex place-content-center text-sm'>
-            <li className='mx-4'><a href="#profile ">Profile</a></li>
-            <li className='mx-4'><a href="#link">Link</a></li>
+          <p className='text-center py-4 text-xl'>skota11.com</p>
+          <ul className='gap-x-4 flex place-content-center text-sm'>
+            <li className=''><a href="#profile ">Profile</a></li>
+            <li className=''><a href="#link">Link</a></li>
+            <li className=''><a href="#contact">Contact</a></li>
             </ul>
         </header>
+        </animated.div>
+        <animated.div style={{...springX,}}>
+        <h1 className='text-center text-2xl'>Skota11のホームページにようこそ！</h1>
         </animated.div>
         <main>
           <animated.div style={{
           ...springX,
-        }} className='my-8'>
+        }} className='my-8' id="profile">
             <h1 className='text-center text-2xl underline underline-offset-4 mb-4'>Profile</h1>
             <div className='flex place-content-center'>
             <div className='rounded-xl bg-sprout w-4/5 max-w-screen-sm p-8 shadow-lg duration-300 hover:shadow-neutral-300'>
@@ -59,10 +63,14 @@ export default function Home() {
                   <p>Node.jsとかDenoとかが出来ます。ReactとNext.jsを習得中</p>
                   <p>Misskey鯖とかマイクラ鯖とかを動かしてます</p>
                 </div>
+                <hr className='my-4' />
+                <h2 className='my-2'>DekiruKoto</h2>
+                <p>PHP / Python / JavaScript / Node.js / Deno </p>
+                <p>React / Next.js / Vue</p>
               </div>
             </div>
           </animated.div>
-          <animated.div style={{
+          <animated.div id="link" style={{
           ...springX,
         }} className='my-8'>
             <h1 className='text-center text-2xl underline underline-offset-4 mb-4'>Link</h1>
@@ -72,12 +80,12 @@ export default function Home() {
               <p className='my-4'><a href="https://twitter.com/Kota_pclive" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon width="30px" className='inline mr-2' icon={faTwitter} />Twitter</a><br />@Kota_pclive</p>
               <p className='my-4'><a href="https://discord.com/users/896299292845817856" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon width="30px" className='inline mr-2' icon={faDiscord} />Discord</a><br />Skota11#1930</p>
               <p className='my-8'><a href="https://github.com/Skota11/portfolio" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon width="30px" className='inline mr-2' icon={faCode} />Source</a><br />(Github)</p>
-              <p className='my-2'> - <a href="https://mi.skota11.com">Misskey鯖(こたすき～)</a></p>
+              <p className='my-2'> - <a href="https://mi.skota11.com/@kota">Misskey(こたすき～)</a></p>
               <p> - <a href="/works">Works一覧へ</a></p>
             </div>
             </div>
           </animated.div>
-          <animated.div style={{
+          <animated.div id="contact" style={{
           ...springX,
         }} className='my-8'>
             <h1 className='text-center text-2xl underline underline-offset-4 mb-4'>Contact</h1>
@@ -89,6 +97,10 @@ export default function Home() {
             </div>
             </div>
           </animated.div>
+          <footer className='bg-moss_green rounded-t-xl shadow-xl text-martinique mt-4 py-4'>
+            <p className='text-center'>&copy; Skota11</p>
+          <p className='text-center'>このサイトは、LINE株式会社のLINESeedを使用しています。/ <a className='underline' href="https://seed.line.me/">LINESeed</a></p>
+          </footer>
         </main>
     </>
   )
