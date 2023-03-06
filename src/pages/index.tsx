@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import {Image} from 'next/image';
 
 //module
 import {
@@ -53,7 +52,7 @@ export default function Home() {
             <div className='rounded-xl bg-sprout w-4/5 max-w-screen-sm p-8 shadow-lg duration-300 hover:shadow-neutral-300'>
               <h2 className='my-4 text-xl'>Skota11 こた</h2>
               <div className='mb-4'>
-                <Image src="https://avatars.githubusercontent.com/u/91359399" alt="" width="60px"/>
+                <img src="https://avatars.githubusercontent.com/u/91359399" alt="" width="60px"/>
                 </div>
                 <div>
                   <p className='mb-2'>14yo / Student</p>
