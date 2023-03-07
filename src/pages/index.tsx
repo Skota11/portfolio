@@ -65,8 +65,8 @@ export default function Home() {
                 </div>
                 <hr className='my-4' />
                 <h2 className='my-2'>DekiruKoto</h2>
-                <p>PHP / Python / JavaScript / Node.js / Deno </p>
-                <p>React / Next.js / Vue</p>
+                <p>JavaScript / Node.js / Deno </p>
+                <p>React / Next.js </p>
               </div>
             </div>
           </animated.div>
