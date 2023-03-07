@@ -81,7 +81,7 @@ export default function Home() {
               <p className='my-4'><a href="https://discord.com/users/896299292845817856" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon width="30px" className='inline mr-2' icon={faDiscord} />Discord</a><br />Skota11#1930</p>
               <p className='my-8'><a href="https://github.com/Skota11/portfolio" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon width="30px" className='inline mr-2' icon={faCode} />Source</a><br />(Github)</p>
               <p className='my-2'> - <a href="https://mi.skota11.com/@kota">Misskey(こたすき～)</a></p>
-              <p> - <a href="/works">Works一覧へ</a></p>
+              <p> - <Link href="/works">Works一覧へ</Link></p>
             </div>
             </div>
           </animated.div>
