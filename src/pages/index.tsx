@@ -36,11 +36,10 @@ export default function Home() {
           ...springY,
         }}>
         <header className='bg-half_baked rounded-b-xl shadow-xl text-martinique mb-4'>
-          <p className='text-center py-4 text-xl'>skota11.com</p>
+          <p className='text-center py-4 text-xl'><a href="/">skota11.com</a></p>
           <ul className='gap-x-4 flex place-content-center text-sm'>
-            <li className=''><a href="#profile ">Profile</a></li>
-            <li className=''><a href="#link">Link</a></li>
-            <li className=''><a href="#contact">Contact</a></li>
+            <li className='ml-4'><a href="/">Top</a></li>
+            <li className=''><a href="/works">Works</a></li>
             </ul>
         </header>
         </animated.div>
@@ -99,7 +98,7 @@ export default function Home() {
           </animated.div>
           <footer className='bg-moss_green rounded-t-xl shadow-xl text-martinique mt-4 py-4'>
             <p className='text-center'>&copy; Skota11</p>
-          <p className='text-center'>このサイトは、LINE株式会社のLINESeedを使用しています。/ <a className='underline' href="https://seed.line.me/">LINESeed</a></p>
+          <p className='text-center text-sm'>このサイトは、LINE株式会社のLINESeedを使用しています。/ <a className='underline' href="https://seed.line.me/">LINESeed</a></p>
           </footer>
         </main>
     </>
