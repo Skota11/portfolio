@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 
-export default function Home({ac:{}}) {
+export default function Home({ac:any}) {
   //animation
   const springX = useSpring({
     from: { x: -100 },
