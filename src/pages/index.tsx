@@ -12,7 +12,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 
-export default function Home() {
+export default function Home({ac}) {
+  //animation
   const springX = useSpring({
     from: { x: -100 },
     to: { x: 0 },
@@ -21,6 +22,20 @@ export default function Home() {
     from: { y: -300 },
     to: { y: 0 },
   });
+  //status
+  const status = (ac) => {
+    switch (ac.status) {
+      case "online":
+        return (<><p><span className='text-green-600 mr-2'>●</span>ONLINE</p><div className='border-l-4 p-2 my-4'><p>{ac.activities[0].name}をプレイ中</p><p>{ac.activities[0].details}</p></div></>)
+        break;
+      case "idle":
+        return <p><span className='text-orange-600 mr-2'>●</span>IDLE</p>
+      case "dnd":
+        return <p><span className='text-red-600 mr-2'>●</span>DoNotDisturb</p>
+      default:
+        break;
+    }
+  }
   return (
     <>
       <Head>
@@ -97,6 +112,17 @@ export default function Home() {
             </div>
             </div>
           </animated.div>
+          <animated.div id="status" style={{
+          ...springX,
+        }} className='my-8'>
+            <h1 className='text-center text-2xl underline underline-offset-4 mb-4'>Status</h1>
+            <div className='flex place-content-center'>
+            <div className='rounded-xl bg-cold_purple w-4/5 max-w-screen-sm p-8 shadow-lg duration-300 hover:shadow-neutral-300'>
+              <p className='my-4'>Skota11のステータスです。</p>
+              {status(ac)}
+            </div>
+            </div>
+          </animated.div>
           <footer className='bg-moss_green rounded-t-xl shadow-xl text-martinique mt-4 py-4'>
             <p className='text-center'>&copy; Skota11</p>
           <p className='text-center text-sm'>このサイトは、LINE株式会社のLINESeedを使用しています。/ <a className='underline' href="https://seed.line.me/">LINESeed</a></p>
@@ -105,3 +131,14 @@ export default function Home() {
     </>
   )
 }
+
+//api
+export const getServerSideProps = async () => {
+  const ac = await (await fetch("https://ac.skota11.com/activity")).json();
+  console.log(ac);
+  return {
+    props: {
+      ac: ac
+    }
+  }
+};
