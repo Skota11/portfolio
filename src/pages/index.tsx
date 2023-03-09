@@ -23,7 +23,7 @@ export default function Home({ac}:{ac:any}) {
     to: { y: 0 },
   });
   //status
-  const status = (ac) => {
+  const status = (ac:any) => {
     switch (ac.status) {
       case "online":
         return (<><p><span className='text-green-600 mr-2'>●</span>ONLINE</p><div className='border-l-4 p-2 my-4'><p>{ac.activities[0].name}をプレイ中</p><p>{ac.activities[0].details}</p></div></>)
