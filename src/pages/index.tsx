@@ -14,8 +14,8 @@ import { faDiscord, faGithub, faTwitter } from '@fortawesome/free-brands-svg-ico
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 
 //com
-import Header from "../../component/header.tsx";
-import Footer from "../../component/footer.tsx";
+import Header from "../../component/header";
+import Footer from "../../component/footer";
 
 export default function Home({ac}:{ac:any}) {
   //useState
