@@ -9,7 +9,7 @@ import { faDiscord, faGithub, faTwitter } from '@fortawesome/free-brands-svg-ico
   
   export default function Home() {
     const springY = useSpring({
-      from: { y: 100 },
+      from: { y: 500 },
       to: { y: 0 },
     });
       return (
