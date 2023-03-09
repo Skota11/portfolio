@@ -78,6 +78,12 @@ export default function Home() {
                 <p>ツイートラベルを復活させます。(Twitter for xx)</p>
                 </a>
               </div>
+              <div className='border-l-4 pl-4 my-6'>
+              <a href="https://vc.skota11.repl.co" target="_blank" rel="noopener noreferrer">
+                <h2>Let's VC</h2>
+                <p>同じ名前の部屋に入るだけで、VCができる。</p>
+                </a>
+              </div>
             </div>
             </div>
           </animated.div>
