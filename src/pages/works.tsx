@@ -87,9 +87,12 @@ export default function Home() {
             </div>
             </div>
           </animated.div>
-          <footer className='bg-moss_green rounded-t-xl shadow-xl text-martinique mt-4 py-4'>
-            <p className='text-center'>&copy; Skota11</p>
-          <p className='text-center text-sm'>このサイトは、LINE株式会社のLINESeedを使用しています。/ <a className='underline' href="https://seed.line.me/">LINESeed</a></p>
+          <footer className='bg-moss_green rounded-t-xl shadow-xl text-martinique mt-4 py-8 flex place-content-center'>
+            <div className='w-4/5'>
+              <p className='mb-4'>Skota11’s portfolio</p>
+              <p className='float-right	'><a href="/" className='mr-2'>Top</a><a className='mr-4' href="/works">Works</a> &copy; Skota11</p>
+              <p className='rounded-xl h-16 p-4 bg-marzipan inline'><a href="https://twitter.com/kota_pclive"><FontAwesomeIcon icon={faTwitter} width="30px" className='inline mr-2' />Twitterをフォローする</a></p>
+            </div>
           </footer>
         </main>
     </>
