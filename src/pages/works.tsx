@@ -12,6 +12,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 
+//com
+import Header from "../../component/header.tsx";
+import Footer from "../../component/footer.tsx";
+
 export default function Home() {
   const springX = useSpring({
     from: { x: -100 },
@@ -32,18 +36,7 @@ export default function Home() {
 <link rel="preconnect" href="https://fonts.gstatic.com" />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
       </Head>
-      <animated.div
-        style={{
-          ...springY,
-        }}>
-        <header className='bg-half_baked rounded-b-xl shadow-xl text-martinique mb-4'>
-          <p className='text-center py-4 text-xl'><Link href="/">skota11.com</Link></p>
-          <ul className='gap-x-4 flex place-content-center text-sm'>
-            <li className='ml-4'><Link href="/">Top</Link></li>
-            <li className=''><Link href="/works">Works</Link></li>
-            </ul>
-        </header>
-        </animated.div>
+      <Header></Header>
         <animated.div style={{...springX,}}>
         <h1 className='text-center text-xl'>Skota11のホームページにようこそ！</h1>
         </animated.div>
@@ -87,13 +80,7 @@ export default function Home() {
             </div>
             </div>
           </animated.div>
-          <footer className='bg-moss_green rounded-t-xl shadow-xl text-martinique mt-4 py-8 flex place-content-center'>
-            <div className='w-4/5'>
-              <p className='mb-4'>Skota11’s portfolio</p>
-              <p className='float-right	'><Link href="/" className='mr-2'>Top</Link><Link className='mr-4' href="/works">Works</Link> &copy; Skota11</p>
-              <p className='rounded-xl h-16 p-4 bg-marzipan inline'><a href="https://twitter.com/kota_pclive"><FontAwesomeIcon icon={faTwitter} width="30px" className='inline mr-2' />Twitterをフォローする</a></p>
-            </div>
-          </footer>
+          <Footer></Footer>
         </main>
     </>
   )
