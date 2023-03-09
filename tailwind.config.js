@@ -18,7 +18,8 @@ module.exports = {
             "cold_purple" : "#b1a6d8",
             "martinique" : "#2b2e4a",
             "osyarena_kuro" : "#333",
-            "powder_blue" : "#add8e1"
+            "powder_blue" : "#add8e1",
+            "spring_wood": "#f6f2ee"
         }
       },
     },

@@ -117,7 +117,7 @@ export default function Home({ac}:{ac:any}) {
         }} className='my-8'>
             <h1 className='text-center text-2xl underline underline-offset-4 mb-4'>Status</h1>
             <div className='flex place-content-center'>
-            <div className='rounded-xl bg-cold_purple w-4/5 max-w-screen-sm p-8 shadow-lg duration-300 hover:shadow-neutral-300'>
+            <div className='rounded-xl bg-spring_wood w-4/5 max-w-screen-sm p-8 shadow-lg duration-300 hover:shadow-neutral-300'>
               <p className='my-4'>Skota11のステータスです。</p>
               {status(ac)}
             </div>
