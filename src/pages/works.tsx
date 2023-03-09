@@ -13,8 +13,8 @@ import { faDiscord, faGithub, faTwitter } from '@fortawesome/free-brands-svg-ico
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 
 //com
-import Header from "../../component/header";
-import Footer from "../../component/footer";
+import Header from "../../components/header";
+import Footer from "../../components/footer";
 
 export default function Home() {
   const springX = useSpring({
