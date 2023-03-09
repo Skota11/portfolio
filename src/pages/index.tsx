@@ -138,7 +138,7 @@ export default function Home({ac}:{ac:any}) {
           <footer className='bg-moss_green rounded-t-xl shadow-xl text-martinique mt-4 py-8 flex place-content-center'>
             <div className='w-4/5'>
               <p className='mb-4'>Skota11’s portfolio</p>
-              <p className='float-right	'><a href="/" className='mr-2'>Top</a><a className='mr-4' href="/works">Works</a> &copy; Skota11</p>
+              <p className='float-right	'><Link href="/" className='mr-2'>Top</Link><Link className='mr-4' href="/works">Works</Link> &copy; Skota11</p>
               <p className='rounded-xl h-16 p-4 bg-marzipan inline'><a href="https://twitter.com/kota_pclive"><FontAwesomeIcon icon={faTwitter} width="30px" className='inline mr-2' />Twitterをフォローする</a></p>
             </div>
           </footer>
