@@ -139,7 +139,7 @@ export default function Home({ac}:{ac:any}) {
             <div className='w-4/5'>
               <p className='mb-4'>Skota11’s portfolio</p>
               <p className='float-right	'><Link href="/" className='mr-2'>Top</Link><Link className='mr-4' href="/works">Works</Link> &copy; Skota11</p>
-              <p className='rounded-xl h-16 p-4 bg-marzipan inline'><a href="https://twitter.com/kota_pclive"><FontAwesomeIcon icon={faTwitter} width="30px" className='inline mr-2' />Twitterをフォローする</a></p>
+              <a href="https://twitter.com/kota_pclive"><p className='bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded w-fit'><FontAwesomeIcon icon={faTwitter} width="30px" className='inline mr-2' />Twitterをフォローする</p></a>
             </div>
           </footer>
         </main>
