@@ -81,7 +81,7 @@ export default function Home({ac}:{ac:any}) {
             <h1 className='text-center text-2xl underline underline-offset-4 mb-4'>Profile</h1>
             <div className='flex place-content-center'>
             <div className='rounded-xl bg-sprout w-4/5 max-w-screen-sm p-8 shadow-lg duration-300 hover:shadow-neutral-300'>
-              <h2 className='my-4 text-xl'>Skota11 こた</h2>
+              <h2 className='my-4 text-xl'>Skota11 | こた</h2>
               <div className='mb-4'>
                 <img src="https://avatars.githubusercontent.com/u/91359399" alt="" width="60px"/>
                 </div>
