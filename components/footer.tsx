@@ -9,11 +9,15 @@ import { faDiscord, faGithub, faTwitter } from '@fortawesome/free-brands-svg-ico
   
   export default function Home() {
     const springY = useSpring({
-      from: { y: -300 },
+      from: { y: 100 },
       to: { y: 0 },
     });
       return (
           <>
+          <animated.div
+          style={{
+            ...springY,
+          }}>
           <footer className='bg-moss_green rounded-t-xl shadow-xl text-martinique mt-4 py-8 flex place-content-center'>
             <div className='w-4/5'>
               <p className='mb-4'>Skota11’s portfolio</p>
@@ -21,6 +25,7 @@ import { faDiscord, faGithub, faTwitter } from '@fortawesome/free-brands-svg-ico
               <a href="https://twitter.com/kota_pclive"><p className='bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded w-fit'><FontAwesomeIcon icon={faTwitter} width="30px" className='inline mr-2' />Twitterをフォローする</p></a>
             </div>
           </footer>
+          </animated.div>
           </>
       )
   }
