@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import  Link  from "next/link";
 import { Inter } from 'next/font/google'
+import { useState, useEffect } from 'react'
 
 //module
 import {
@@ -13,6 +14,12 @@ import { faDiscord, faGithub, faTwitter } from '@fortawesome/free-brands-svg-ico
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home({ac}:{ac:any}) {
+  //useState
+  const [activities , setActivities] = useState({});
+  //useEffect
+  useEffect(() => {
+    getAc().then(res => setActivities(res));
+  },[]);
   //animation
   const springX = useSpring({
     from: { x: -100 },
@@ -124,7 +131,7 @@ export default function Home({ac}:{ac:any}) {
             <div className='flex place-content-center'>
             <div className='rounded-xl bg-spring_wood w-4/5 max-w-screen-sm p-8 shadow-lg duration-300 hover:shadow-neutral-300'>
               <p className='my-4'>Skota11のステータスです。</p>
-              {status(ac)}
+              {status(activities)}
             </div>
             </div>
           </animated.div>
@@ -138,12 +145,8 @@ export default function Home({ac}:{ac:any}) {
 }
 
 //api
-export const getServerSideProps = async () => {
+const getAc = async () => {
   const ac = await (await fetch("https://ac.skota11.com/activity")).json();
   console.log(ac);
-  return {
-    props: {
-      ac: ac
-    }
-  }
+  return ac
 };
