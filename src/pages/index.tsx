@@ -96,6 +96,7 @@ export default function Home({ac}:{ac:any}) {
             <h1 className='text-center text-2xl underline underline-offset-4 mb-4'>Link</h1>
             <div className='flex place-content-center'>
             <div className='rounded-xl bg-vanilla w-4/5 max-w-screen-sm p-8 shadow-lg duration-300 hover:shadow-neutral-300'>
+              <p className='mt-4 mb-8'><a href="https://blog.skota11.com" target="_blank" rel="noopener noreferrer">MyBlog <br />SkotaBlog | 技術系やプログラミング系の記事を投稿中！</a></p>
               <p className='my-4'><a href="https://github.com/Skota11" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon width="30px" className='inline mr-2' icon={faGithub}/>Github</a><br />@Skota11</p>
               <p className='my-4'><a href="https://twitter.com/Kota_pclive" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon width="30px" className='inline mr-2' icon={faTwitter} />Twitter</a><br />@Kota_pclive</p>
               <p className='my-4'><a href="https://discord.com/users/896299292845817856" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon width="30px" className='inline mr-2' icon={faDiscord} />Discord</a><br />Skota11#1930</p>
