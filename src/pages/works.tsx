@@ -12,9 +12,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 
-//com
-import Header from "../../components/header";
-import Footer from "../../components/footer";
 
 export default function Home() {
   const springX = useSpring({
@@ -36,7 +33,6 @@ export default function Home() {
 <link rel="preconnect" href="https://fonts.gstatic.com" />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
       </Head>
-      <Header></Header>
         <animated.div style={{...springX,}}>
         <h1 className='text-center text-xl'>Skota11のホームページにようこそ！</h1>
         </animated.div>
@@ -46,7 +42,7 @@ export default function Home() {
         }} className='my-8' id="profile">
             <h1 className='text-center text-2xl underline underline-offset-4 mb-4'>Works</h1>
             <div className='flex place-content-center'>
-            <div className='rounded-xl bg-sprout w-4/5 max-w-screen-sm p-8 shadow-lg duration-300 hover:shadow-neutral-300'>
+            <div className='rounded-xl bg-sprout w-4/5 max-w-screen-md p-8 shadow-lg duration-300 hover:shadow-neutral-300'>
               <div className='border-l-4 pl-4 my-6'>
               <a href="https://mi.skota11.com" target="_blank" rel="noopener noreferrer">
                 <h2>KotaSkey</h2>
@@ -80,7 +76,6 @@ export default function Home() {
             </div>
             </div>
           </animated.div>
-          <Footer></Footer>
         </main>
     </>
   )
