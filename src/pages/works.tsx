@@ -56,7 +56,7 @@ export default function Home() {
                 </a>
               </div>
               <div className='border-l-4 pl-4 my-6'>
-                <a href="https://github.com/Skota11/screenlive" target="_blank" rel="noopener noreferrer">
+                <a href="https://screenlive.pages.dev/" target="_blank" rel="noopener noreferrer">
                   <h2>ScreenLive</h2>
                   <p>あなたの画面を簡単に共有</p>
                 </a>
