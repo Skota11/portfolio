@@ -46,25 +46,25 @@ export default function Home() {
               <div className='border-l-4 pl-4 my-6'>
                 <a href="https://mi.skota11.com" target="_blank" rel="noopener noreferrer">
                   <h2>KotaSkey</h2>
-                  <p>僕のラズパイで建てている、Misskeyサーバーです</p>
+                  <p>僕のラズパイで建てている、Misskeyサーバー</p>
                 </a>
               </div>
               <div className='border-l-4 pl-4 my-6'>
                 <a href="https://github.com/Skota11/gyaku-bot" target="_blank" rel="noopener noreferrer">
                   <h2>GyakuBot</h2>
-                  <p>逆翻訳をしてくれる、DiscordBotです</p>
+                  <p>逆翻訳をしてくれる、DiscordBot</p>
                 </a>
               </div>
               <div className='border-l-4 pl-4 my-6'>
                 <a href="https://github.com/Skota11/screenlive" target="_blank" rel="noopener noreferrer">
                   <h2>ScreenLive</h2>
-                  <p>あなたの画面を簡単に共有できます</p>
+                  <p>あなたの画面を簡単に共有</p>
                 </a>
               </div>
               <div className='border-l-4 pl-4 my-6'>
                 <a href="https://github.com/Skota11/twi-label" target="_blank" rel="noopener noreferrer">
                   <h2>TwiLabel</h2>
-                  <p>ツイートラベルを復活させます(Twitter for xx)</p>
+                  <p>ツイートラベルを復活(Twitter for xx)</p>
                 </a>
               </div>
               <div className='border-l-4 pl-4 my-6'>
