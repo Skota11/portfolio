@@ -20,7 +20,8 @@ module.exports = {
             "osyarena_kuro" : "#333",
             "powder_blue" : "#add8e1",
             "spring_wood": "#f6f2ee",
-            "marzipan":"#f6e492"
+            "marzipan":"#f6e492",
+            "gray" : "#f6f6f6",
         }
       },
     },
