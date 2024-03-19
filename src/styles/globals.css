@@ -10,8 +10,10 @@
 }
 
 * {
-  font-family: 'Poppins', "LSeedJP", sans-serif;
+  font-family: 'Barlow', "LSeedJP", sans-serif;
   color: #333;
+  font-weight: 700;
+  font-style: normal;
 }
 
 body {

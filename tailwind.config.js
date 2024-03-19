@@ -11,12 +11,12 @@ module.exports = {
     theme: {
       extend: {
         colors : {
-            "half_baked" : "#8bcbc2",
+            "half_baked" : "#5c96c1",
             "moss_green" : "#a6d8b1",
-            "sprout" : "#c2d6a8",
-            "vanilla" : "#d1c4a8",
-            "cold_purple" : "#b1a6d8",
-            "martinique" : "#2b2e4a",
+            "sprout" : "#8abbd0",
+            "vanilla" : "#b6d1e2",
+            "cold_purple" : "#c6e2eb",
+            "martinique" : "#5c96c1",
             "osyarena_kuro" : "#333",
             "powder_blue" : "#add8e1",
             "spring_wood": "#f6f2ee",
