@@ -23,7 +23,7 @@ export default function Home() {
         <footer className='bg-moss_green rounded-t-xl shadow-xl text-martinique mt-4 py-8 flex place-content-center'>
           <div className='w-4/5'>
             <p className='mb-4'>Skota11’s portfolio</p>
-            <p className='float-right	'><Link href="/" className='mr-2'>Top</Link><Link className='mr-4' href="/works">Works</Link> &copy; Skota11 <br /> このサイトは、LINESeedを使用しています。</p>
+            <p className='float-right	'><Link href="/" className='mr-2'>Top</Link><Link className='mr-4' href="/works">Works</Link> &copy; Skota11 <br /> このサイトは、<a href='https://seed.line.me/index_jp.html'>LINESeed</a>を使用しています。</p>
             <div className="flex gap-x-4 ">
               <div className="p-4 rounded-lg bg-gray h-fit">
                 <a href="https://twitter.com/Kota_pclive">
