@@ -43,29 +43,23 @@ export default function Home() {
         }} className='my-8' id="profile">
           <h1 className='text-center text-2xl underline underline-offset-4 mb-4'>Works</h1>
           <div className='flex place-content-center'>
-            <div className='rounded-xl bg-sprout w-4/5 max-w-screen-md p-8 shadow-lg duration-300 hover:shadow-2xl'>
-              <div className='border-l-4 pl-4 my-6'>
-                <a href="https://mi.skota11.com" target="_blank" rel="noopener noreferrer">
-                  <h2>KotaSkey</h2>
-                  <p>僕のラズパイで建てている、Misskeyサーバー</p>
-                </a>
-              </div>
+            <div className='rounded-xl bg-sprout w-11/12 max-w-screen-md p-8 shadow-lg duration-300 hover:shadow-2xl'>
               <div className='border-l-4 pl-4 my-6'>
                 <a href="https://github.com/Skota11/gyaku-bot" target="_blank" rel="noopener noreferrer">
                   <h2>GyakuBot</h2>
-                  <p>逆翻訳をしてくれる、DiscordBot</p>
+                  <p>逆翻訳をしてくれるDiscordBot</p>
+                </a>
+              </div>
+              <div className='border-l-4 pl-4 my-6'>
+                <a href="https://discord.com/oauth2/authorize?client_id=1282596132001939549&permissions=0&integration_type=0&scope=bot" target="_blank" rel="noopener noreferrer">
+                  <h2>文字起こしBot</h2>
+                  <p>VCの声を文字起こしするDiscordBot</p>
                 </a>
               </div>
               <div className='border-l-4 pl-4 my-6'>
                 <a href="https://screenlive.pages.dev/" target="_blank" rel="noopener noreferrer">
                   <h2>ScreenLive</h2>
                   <p>あなたの画面を簡単に共有</p>
-                </a>
-              </div>
-              <div className='border-l-4 pl-4 my-6'>
-                <a href="https://github.com/Skota11/twi-label" target="_blank" rel="noopener noreferrer">
-                  <h2>TwiLabel</h2>
-                  <p>ツイートラベルを復活(Twitter for xx)</p>
                 </a>
               </div>
               <div className='border-l-4 pl-4 my-6'>
@@ -80,6 +74,13 @@ export default function Home() {
                   <p>Youtubeの動画をみんなでウォッチパーティー</p>
                 </a>
               </div>
+              <div className='border-l-4 pl-4 my-6'>
+                <a href="https://millionaire-zeta.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  <h2>オンライン大富豪 [作成途中]</h2>
+                  <p>大富豪(トランプゲーム)をオンラインプレイ</p>
+                </a>
+              </div>
+
             </div>
           </div>
         </animated.div>
